@@ -38,7 +38,7 @@ if __name__ == '__main__':
     west=[_ for _ in myList if _.dir=='West']
     east=[_ for _ in myList if _.dir=='East']
 
-
+    
     print('\n Frequent Travellers in West Zone !! \n')
     mergeSort(west)
     for i in west:
