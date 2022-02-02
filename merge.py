@@ -1,3 +1,4 @@
+import itertools
 from read import get_data
 
 def mergeSort(myList):
@@ -14,8 +15,8 @@ def mergeSort(myList):
         
         while i < len(left) and j < len(right):
             if left[i].frequency >= right[j].frequency:
-              myList[k] = left[i]
-              i += 1
+                myList[k] = left[i]
+                i += 1
             else:
                 myList[k] = right[j]
                 j += 1
@@ -38,23 +39,24 @@ if __name__ == '__main__':
     west=[_ for _ in myList if _.dir=='West']
     east=[_ for _ in myList if _.dir=='East']
 
-    
+    limit=3
+
     print('\n Frequent Travellers in West Zone !! \n')
     mergeSort(west)
-    for i in west:
-        print(i)
+    for item in itertools.islice(west, 0, limit):
+        print(item)
 
     print('\n Frequent Travellers in East Zone !! \n')
     mergeSort(east)
-    for i in east:
-        print(i)
+    for item in itertools.islice(east, 0, limit):
+        print(item)
 
     print('\n Frequent Travellers in North Zone !! \n')
     mergeSort(north)
-    for i in north:
-        print(i)
+    for item in itertools.islice(north, 0, limit):
+        print(item)
 
     print('\n Frequent Travellers in South Zone !! \n')
     mergeSort(south)
-    for i in south:
-        print(i)
+    for item in itertools.islice(south, 0, limit):
+        print(item)
