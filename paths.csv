@@ -1,3 +1,11 @@
-station_name,code,cost,destination
-Kakkanad,KKD,100,Kochi
-Ravipuram,RPM,200,Kochi
+Source,Station,Code,Cost,Destination,Num
+0,Petta,TWH,400,Vadakkekkotta,1
+0,Petta,TWH,100,SN Junction,2
+0,Petta,TWH,500,Thrippunithara,3
+1,Vadakkekkotta,VKT,200,Thrippunithara,3
+1,Vadakkekkotta,VKT,300,Kakkanad,4
+1,Vadakkekkotta,VKT,300,Kinfra,5
+2,SN Junction,SNJ,200,Thrippunithara,3
+2,SN Junction,SNJ,800,Kakkanad,4
+3,Thrippunithara,THR,100,Kakkanad,4
+4,Kakkanad,KKD,300,Kinfra,5
