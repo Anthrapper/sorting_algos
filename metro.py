@@ -13,8 +13,9 @@ class Metro:
 	def __str__(self):
 		return str.format("{}\t{}\t{}\t{}", self.name, self.code,self.dir,self.frequency)
 
-	# def __repr__(self):
-	# 	return str.format("{}\t{}\t{}", self.name, self.code,self.dir)
 			
 	def get(self,varname):
 		return getattr(self,varname)
+
+	# def __repr__(self):
+	# 	return str.format("{}\t{}\t{}", self.name, self.code,self.dir)

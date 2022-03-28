@@ -1,4 +1,4 @@
-Source,Station,Code,Cost,Destination,Num
+Src,Station,Code,Cost,Destination,Dst
 0,Petta,TWH,400,Vadakkekkotta,1
 0,Petta,TWH,100,SN Junction,2
 0,Petta,TWH,500,Thrippunithara,3
